@@ -1,2 +1,3 @@
 # Color-Whiz
-An Extension For Chrome
+
+A Chrome Extension
