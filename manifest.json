@@ -6,7 +6,7 @@
 	"background": {
 		"service_worker": "background.js"
 	},
-	"permissions": ["storage", "activeTab", "scripting"],
+	"permissions": ["storage", "activeTab", "scripting", "notifications"],
 	"action": {
 		"default_popup": "/popup/popup.html"
 	},
@@ -14,7 +14,9 @@
 		"16": "/images/img_16.png",
 		"32": "/images/img_32.png",
 		"48": "/images/img_48.png",
-		"128": "/images/img_128.png"
+		"128": "/images/img_128.png",
+		"256": "/images/img_256.png",
+		"512": "/images/img_512.png"
 	},
 	"options_page": "options/options.html"
 }

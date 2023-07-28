@@ -26,6 +26,12 @@ pickColorBtn.addEventListener("click", async () => {
 				// Copy color to clipboard
 				const colorToCopy = rgbColor;
 				await copyToClipboard(colorToCopy);
+
+				// Send notification to user
+				chrome.runtime.sendMessage({
+					action: "color_picked",
+					clipboard: colorToCopy,
+				});
 			}
 		}
 	);
