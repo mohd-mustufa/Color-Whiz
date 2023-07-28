@@ -1,3 +1,5 @@
+import * as converter from "/modules/converter.js";
+
 const pickColorBtn = document.getElementById("pickColorBtn");
 const colorGrid = document.querySelector(".colorGrid");
 const colorValue = document.querySelector(".colorValue");
@@ -11,35 +13,23 @@ pickColorBtn.addEventListener("click", async () => {
 			function: pickColor,
 		},
 		async (injectionResults) => {
-			console.log(injectionResults);
 			const [data] = injectionResults;
+
 			if (data.result) {
-				// Handling for rgba
-				const color = handleRGBA(data.result.sRGBHex);
-				console.log(color);
-				colorGrid.style.backgroundColor = color;
-				colorValue.innerText = color;
+				// Conversion, handling and display of selected color
+				const rgbColor = converter.handleRGBA(data.result.sRGBHex);
+				const hexColor = converter.rgbToHex(rgbColor);
+				const hslColor = converter.rgbToHsl(rgbColor);
+				colorGrid.style.backgroundColor = rgbColor;
+				colorValue.innerText = rgbColor;
+
 				// Copy color to clipboard
-				try {
-					await navigator.clipboard.writeText(color);
-				} catch (err) {
-					console.error(err);
-				}
+				const colorToCopy = rgbColor;
+				await copyToClipboard(colorToCopy);
 			}
 		}
 	);
 });
-
-function handleRGBA(color) {
-	if (color.startsWith("#")) return color;
-
-	const rgbaValues = color.replace(/[^\d,.]/g, "").split(",");
-	if (rgbaValues.length === 4) {
-		const [r, g, b] = rgbaValues;
-		return `rgb(${r}, ${g}, ${b})`;
-	}
-	return "red";
-}
 
 // This function creates an eyedropper which helps in selecting a color from the screen
 async function pickColor() {
@@ -49,5 +39,14 @@ async function pickColor() {
 		return selectedColor;
 	} catch (err) {
 		console.log(err);
+	}
+}
+
+// Copies the given color to the clipboard
+async function copyToClipboard(color) {
+	try {
+		await navigator.clipboard.writeText(color);
+	} catch (err) {
+		console.error(err);
 	}
 }
