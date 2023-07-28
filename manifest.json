@@ -15,5 +15,6 @@
 		"32": "/images/img_32.png",
 		"48": "/images/img_48.png",
 		"128": "/images/img_128.png"
-	}
+	},
+	"options_page": "options/options.html"
 }
