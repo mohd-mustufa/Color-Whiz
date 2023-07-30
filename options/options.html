@@ -3,9 +3,31 @@
 	<head>
 		<title>Color Whiz Options</title>
 		<link rel="stylesheet" href="options.css" />
-		<script src="options.js" defer></script>
+		<script type="module" src="options.js" defer></script>
 	</head>
 	<body>
-		<h1>Welcome to the options page</h1>
+		<div class="container">
+			<h1>Color Whiz Settings</h1>
+
+			<form id="form">
+				<input type="checkbox" id="copytoclipboard" />
+				<label for="copytoclipboard"
+					>Automatically copy picked color to clipboard.</label
+				>
+				<br />
+				<label for="color-format">Color Format:</label>
+				<select name="color-format" id="color-format">
+					<option value="rgb">RGB</option>
+					<option value="hex">Hex</option>
+					<option value="hsl">HSL</option>
+				</select>
+				<br />
+
+				<input type="checkbox" id="notification" />
+				<label for="notification">Enable Notifications</label>
+				<br /><br />
+				<input type="submit" value="Save" id="save" />
+			</form>
+		</div>
 	</body>
 </html>

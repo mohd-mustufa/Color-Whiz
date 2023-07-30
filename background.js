@@ -10,7 +10,7 @@ function showNotification(message) {
 		type: "basic",
 		iconUrl: "images/img_128.png",
 		title: "Color Whiz - Notification",
-		message: `${message.clipboard} is copied to clipboard`,
+		message: `Color picked: ${message.clipboard}`,
 	};
 
 	// Clear the notificationID if already exists then create a new notification with given ID
