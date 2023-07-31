@@ -15,16 +15,26 @@
 					>Automatically copy picked color to clipboard.</label
 				>
 				<br />
+
 				<label for="color-format">Color Format:</label>
 				<select name="color-format" id="color-format">
 					<option value="rgb">RGB</option>
 					<option value="hex">Hex</option>
 					<option value="hsl">HSL</option>
 				</select>
-				<br />
+				<br /><br />
 
 				<input type="checkbox" id="notification" />
 				<label for="notification">Enable Notifications</label>
+				<br /><br />
+
+				<span>Select Theme:</span>
+				<input type="radio" id="dark-theme" name="theme" value="dark" />
+				<label for="dark-theme">Dark</label>
+				<input type="radio" id="light-theme" name="theme" value="light" />
+				<label for="light-theme">Light</label>
+				<br />
+
 				<br /><br />
 				<input type="submit" value="Save" id="save" />
 			</form>

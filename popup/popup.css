@@ -1,5 +1,10 @@
-body {
-	background-color: #f1f5f9;
+body.light-theme {
+	background-color: #eee;
+}
+
+body.dark-theme {
+	background-color: #333;
+	color: #eee;
 }
 
 .wrapper {

@@ -4,6 +4,8 @@ const pickColorBtn = document.getElementById("pickColorBtn");
 const colorGrid = document.querySelector(".colorGrid");
 const colorValue = document.querySelector(".colorValue");
 
+setTheme();
+
 pickColorBtn.addEventListener("click", async () => {
 	let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
@@ -72,5 +74,15 @@ function showNotification(displayColor) {
 			action: "color_picked",
 			clipboard: displayColor,
 		});
+	}
+}
+
+function setTheme() {
+	if (localStorage.getItem("whiz-theme") === "light") {
+		document.body.classList.remove("dark-theme");
+		document.body.classList.add("light-theme");
+	} else {
+		document.body.classList.remove("light-theme");
+		document.body.classList.add("dark-theme");
 	}
 }
