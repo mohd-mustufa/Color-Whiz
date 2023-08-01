@@ -6,9 +6,18 @@
 	"background": {
 		"service_worker": "background.js"
 	},
-	"permissions": ["activeTab", "scripting", "notifications"],
 	"action": {
 		"default_popup": "/popup/popup.html"
+	},
+	"permissions": ["activeTab", "scripting", "notifications"],
+	"commands": {
+		"open_extension": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+E",
+				"mac": "Command+Shift+E"
+			},
+			"description": "Open the extension"
+		}
 	},
 	"icons": {
 		"16": "/images/img_16.png",
