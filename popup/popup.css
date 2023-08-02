@@ -9,7 +9,7 @@ body.dark-theme {
 }
 
 .wrapper {
-	width: 300px;
+	width: 320px;
 	text-align: center;
 }
 
@@ -28,17 +28,27 @@ body.dark-theme {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+.colorText {
+	font-size: 16px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .colorGrid {
-	height: 20px;
-	width: 20px;
 	display: inline-block;
 	border-radius: 3px;
+	margin-right: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .colorValue {
+	font-size: 13px;
+	text-align: left;
+	padding-left: 0;
 	margin-left: 5px;
-	font-weight: bold;
+	margin-right: 10px;
 }
