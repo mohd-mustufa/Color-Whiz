@@ -35,7 +35,6 @@ With the Color Picker Chrome Extension, you'll never have to guess a color's RGB
 ## Future Enhancements:
 
 1. On clicking the button to pick color, the popup window should disappear so that the user can select any color from behind the popup also.
-2. Should show the last picked color in rgb, hex, hsl on opening the extension.
-3. Store history of color palette which the user can export to a csv. The users should also be able to add their own color in the palette from a color wheel.
-4. Show tooltip with color details when hovering over an element.
-5. Add a developer mode toggle option in settings which will show additional info on the selected element (id, class etc).
+2. Store history of color palette which the user can export to a csv. The users should also be able to add their own color in the palette from a color wheel.
+3. Show tooltip with color details when hovering over an element.
+4. Add a developer mode toggle option in settings which will show additional info on the selected element (id, class etc).
