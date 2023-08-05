@@ -5,7 +5,14 @@ body.light-theme {
 
 body.dark-theme {
 	background-color: #333;
-	color: #eee;
+	color: #fff;
+}
+
+body.dark-theme #pickColorBtn {
+	/* color: #ebae07; */
+	background-color: #fdd225;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .wrapper {
