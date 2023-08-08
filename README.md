@@ -1,6 +1,6 @@
 # Color-Whiz
 
-The Color Whiz Chrome Extension is a powerful tool that allows you to effortlessly capture any color on your screen and obtain its value. With just a few clicks, you can identify the exact color code of any element you come across while browsing the web. Whether you're a designer, developer, or content creator, this extension provides a seamless way to capture, manage and utilize colors effortlessly.
+The [Color Whiz](https://chrome.google.com/webstore/detail/color-whiz/pbbmdombpdggpagnmemhcckpdclolhbg) Chrome Extension is a powerful tool that allows you to effortlessly capture any color on your screen and obtain its value. With just a few clicks, you can identify the exact color code of any element you come across while browsing the web. Whether you're a designer, developer, or content creator, this extension provides a seamless way to capture, manage and utilize colors effortlessly.
 
 ## Features
 
@@ -22,7 +22,7 @@ The Color Whiz Chrome Extension is a powerful tool that allows you to effortless
 
 ## How to Use
 
-- Install the extension from the Chrome Web Store.
+- Install the extension from the Chrome Web Store. [click here](https://chrome.google.com/webstore/detail/color-whiz/pbbmdombpdggpagnmemhcckpdclolhbg)
 - Click on the extension icon in your browser toolbar.
 - The color picker tool will activate, and your cursor will turn into a magnifying glass.
 - Hover over any color on your screen to pick it up, and the selected color will be instantly displayed in the extension popup along with a real-time notification confirming your choice.
@@ -38,3 +38,10 @@ Contributions to this project are highly appreciated. If you'd like to make any 
 <hr>
 
 Overall, the Color Whiz Extension is a must-have tool for designers, developers, and anyone working with colors regularly. Its ability to capture colors from any screen, display colors in various formats, send notifications and support dark/light themes makes it a versatile and user-friendly color management solution. By simplifying the color selection process and providing essential features, the extension enhances productivity and creativity across a wide range of projects. Try it out now and streamline your color exploration process!
+
+## Future Enhancements:
+
+1. On clicking the button to pick color, the popup window should disappear so that the user can select any color from behind the popup also.
+2. Store history of color palette which the user can export to a csv. The users should also be able to add their own color in the palette from a color wheel.
+3. Show tooltip with color details when hovering over an element.
+4. Add a developer mode toggle option in settings which will show additional info on the selected element (id, class etc).
