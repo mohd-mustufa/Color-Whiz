@@ -1,7 +1,7 @@
 {
 	"name": "Color Whiz",
 	"description": "Effortlessly capture and copy colors from any screen for your creative projects.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"manifest_version": 3,
 	"background": {
 		"service_worker": "background.js"
@@ -9,7 +9,8 @@
 	"action": {
 		"default_popup": "/popup/popup.html"
 	},
-	"permissions": ["activeTab", "scripting", "notifications"],
+	"permissions": ["scripting", "notifications"],
+	"host_permissions": ["http://*/*", "https://*/*"],
 	"commands": {
 		"open_extension": {
 			"suggested_key": {
