@@ -38,3 +38,11 @@ Contributions to this project are highly appreciated. If you'd like to make any 
 <hr>
 
 Overall, the Color Whiz Extension is a must-have tool for designers, developers, and anyone working with colors regularly. Its ability to capture colors from any screen, display colors in various formats, send notifications and support dark/light themes makes it a versatile and user-friendly color management solution. By simplifying the color selection process and providing essential features, the extension enhances productivity and creativity across a wide range of projects. Try it out now and streamline your color exploration process!
+
+## Future Enhancements:
+
+1. On clicking the button to pick color, the popup window should disappear so that the user can select any color from behind the popup also.
+2. Store history of color palette which the user can export to a csv. The users should also be able to add their own color in the palette from a color wheel.
+3. Show tooltip with color details when hovering over an element.
+4. Add a developer mode toggle option in settings which will show additional info on the selected element (id, class etc).
+5. Should provide support for all browsers.

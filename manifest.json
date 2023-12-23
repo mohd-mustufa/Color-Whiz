@@ -9,8 +9,7 @@
 	"action": {
 		"default_popup": "/popup/popup.html"
 	},
-	"permissions": ["scripting", "notifications"],
-	"host_permissions": ["http://*/*", "https://*/*"],
+	"permissions": ["activeTab", "scripting", "notifications"],
 	"commands": {
 		"open_extension": {
 			"suggested_key": {
